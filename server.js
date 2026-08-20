@@ -23,6 +23,7 @@ const io = new Server(server, {
 let listeners = 0;
 
 app.get("/", (req, res) => {
+  console.log("Root route hit!");
   res.json({
     status: "online",
     listeners: listeners,
